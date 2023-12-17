@@ -18,10 +18,6 @@ AZURE_SQL_CONNECTIONSTRING = ""
 
 def prepare_connection_string(server,database,username,password):
     global AZURE_SQL_CONNECTIONSTRING
-    server = 'sqlserver0906.database.windows.net'
-    database = 'csvtosql'
-    username = 'sqladmin'
-    password = 'Azure@123456'
     driver= '{ODBC Driver 18 for SQL Server}'
     AZURE_SQL_CONNECTIONSTRING = 'DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password
     
